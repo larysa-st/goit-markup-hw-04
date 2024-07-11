@@ -142,7 +142,7 @@ ol {
 .hero {
   background: #2e2f42;
   height: 600px;
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   padding: 188px 0;
@@ -425,6 +425,11 @@ img {
 
 .portfolio-item:hover .overlay {
   transform: translateY(0%);
+}
+
+.portfolio-item {
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .portfolio-item:hover {
